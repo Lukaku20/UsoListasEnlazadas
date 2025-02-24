@@ -2,7 +2,7 @@
 
 ## Description
 
-## Explicación del Algoritmo
+## Problema 1 _ Recorrer una lista y luego una lista invertida utilizando punteros
 
 El objetivo es invertir el enlace de cada nodo de una lista enlazada de forma iterativa. Para ello, se usan tres punteros:
 
@@ -19,3 +19,9 @@ Avanza los punteros: previous se convierte en el nuevo current y current se muev
 Al finalizar el ciclo, previous apuntará al nuevo primer nodo de la lista invertida.
 
 Este método es eficiente y utiliza O(1) memoria adicional.
+## Problema 2 _ Floyd's Cycle Detection Algorithm (Algoritmo de la Liebre y la Tortuga)
+Enfoque Clásico: La estrategia más conocida para resolver este problema es usar dos punteros:
+
+Slow (la tortuga): Avanza un nodo a la vez.
+Fast (la liebre): Avanza dos nodos a la vez.
+Si en algún momento ambos punteros se encuentran (es decir, apuntan al mismo nodo), significa que hay un ciclo en la lista. Si el puntero rápido llega a NULL, la lista es acíclica.
